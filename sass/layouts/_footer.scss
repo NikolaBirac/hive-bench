@@ -1,0 +1,15 @@
+.footer {
+    // height: 200px;
+    padding: 0 16rem 0;
+    font-size: 1.7rem;
+
+    &__contact {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 10rem;
+        margin-right: 2rem;
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "hive-bench",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass compress:css",
+    "deploy": "gh-pages -d ./"
+  },
+  "author": "Nikola Birac",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "concat": "^1.0.3",
+    "node-sass": "^4.13.1",
+    "nodemon": "^1.18.6",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.1.1"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

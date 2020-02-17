@@ -1,0 +1,27 @@
+nav {
+    border-top: 1px solid rgb(233, 231, 240);
+    border-bottom: 1px solid rgb(233, 231, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    padding: 1.5rem;
+    // justify-content: center;
+    // align-items: center;
+    // width: 70rem;
+
+    &__item {
+        list-style: none;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 0 3.5rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+}

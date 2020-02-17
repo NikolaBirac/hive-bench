@@ -1,0 +1,37 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: $color-primary;
+
+// background-color: red;
+    &__img {
+        width: 43rem;
+    }
+
+    &__text {
+        font-size: 3.5rem;
+        // color: $color-primary;
+
+        &-small {
+            font-size: 2rem;
+
+        }
+    }
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.social {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    & .fab {
+        font-size: 2rem;
+        margin: 0 1rem;
+        color: rgb(185, 183, 183);
+    }
+}

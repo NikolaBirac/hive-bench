@@ -1,0 +1,17 @@
+.form {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40rem;
+    padding: 3rem;
+    border: 1px solid rgb(168, 168, 168);
+
+    &__input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgb(168, 168, 168);
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 1.6rem;
+        font-family: inherit;
+        width: 30rem;
+    }
+}

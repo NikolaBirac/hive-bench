@@ -1,0 +1,25 @@
+@import 'abstracts/mixinis';
+@import 'abstracts/variables';
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layouts/header";
+@import "layouts/navigation";
+@import "layouts/footer";
+
+@import "components/logo";
+@import "components/slider";
+@import "components/projects";
+@import "components/guide";
+@import "components/form";
+@import "components/button";
+
+
+@import "pages/home";
+
+
+
+

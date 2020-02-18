@@ -7,11 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Hive & Bench</title>
 
+  <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />
   <link rel="stylesheet" href="./css/style.comp.css" />
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700&display=swap" rel="stylesheet">
 
-  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
-  <script src="js/lightslider.js"></script>
   <script src="https://kit.fontawesome.com/6a296e5dd3.js" crossorigin="anonymous"></script>
 
 </head>
@@ -21,7 +20,7 @@
   <header>
     <div class="container">
       <div class="logo">
-        <img src="/img/Capture.PNG" class="logo__img" alt="logo">
+        <img src="./img/capture.png" class="logo__img" alt="logo">
         <p class="logo__text">SXM B.V.</p>
         <p class="logo__text-small">Custom Homes / Construction</p>
         <div class="social">
@@ -33,12 +32,12 @@
     </div>
     <nav>
       <ul class="nav" style="position: relative;">
-        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Approach</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Values</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Clients</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">What we do</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+        <!-- <li class="nav__item"><a href="#" class="nav__link">Clients</a></li> -->
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         <!-- <img src="./img/logo-small.jpg" style="width: 70px; position: absolute; top: 60%; left: 47%;" alt=""> -->
       </ul>
     </nav>
@@ -54,22 +53,23 @@
           <div class="lightSlider__img-shadow"></div>
           <div class="lightSlider__heading">
             <h4 class="lightSlider__title">Custom cabinetry and furniture</h4>
-            <!-- <h5 class="lightSlider__text">
-             
-            </h5> -->
+            <!-- <h5 class="lightSlider__text"></h5> -->
           </div>
         </li>
-        <!-- <li class="lightSlider__item">
-          <img class="lightSlider__img" src="./img/restoran-nacionalna-klasa-slider2.png"
-            alt="restoran nacionalna klasa beograd" />
+        <li class="lightSlider__item">
+          <img class="lightSlider__img" src="./img/slider.png" alt="restoran nacionalna klasa beograd" />
+          <div class="lightSlider__img-shadow"></div>
           <div class="lightSlider__heading">
-            <h4 class="lightSlider__title">Najlepša lokacija u Beogradu</h4>
-            <h5 class="lightSlider__text">
-              Restoran Nacionalna klasa nalazi se nadomak ušća i mesta gde se
-              reka Sava uliva u Dunav
-            </h5>
+            <h4 class="lightSlider__title">Custom cabinetry and furniture</h4>
           </div>
-        </li> -->
+        </li>
+        <li class="lightSlider__item">
+          <img class="lightSlider__img" src="./img/slider.png" alt="restoran nacionalna klasa beograd" />
+          <div class="lightSlider__img-shadow"></div>
+          <div class="lightSlider__heading">
+            <h4 class="lightSlider__title">Custom cabinetry and furniture</h4>
+          </div>
+        </li>
       </ul>
     </div>
     <div class="guide u-center-text">
@@ -78,78 +78,78 @@
     </div>
   </div>
 
-  <section class="container">
+  <section class="container section-cards" id="services">
     <h4 class="heading-primary u-center-text u-margin-top-big u-margin-bottom-medium">What We Do</h4>
-    <div class="projects u-center-text">
-      <div class="projects__card">
+    <div class="section-cards__cards u-center-text">
+      <div class="card">
         <a href="#residental">
-          <img src="./img/residental-small.png" class="projects__img" alt="">
+          <img src="./img/residental-small.png" class="card__img" alt="">
         </a>
-        <h5 class="projects__text u-center-text">Residental Construction</h5>
+        <h5 class="card__text u-center-text">Residental Construction</h5>
       </div>
-      <div class="projects__card u-margin-top-big">
+      <div class="card u-margin-top-big">
         <a href="#commercial">
-          <img src="./img/commercial-small.png" class="projects__img" alt="">
+          <img src="./img/commercial-small.png" class="card__img" alt="">
         </a>
-        <h5 class="projects__text u-center-text">Commercial Construction</h5>
+        <h5 class="card__text u-center-text">Commercial Construction</h5>
       </div>
-      <div class="projects__card">
+      <div class="card">
         <a href="#manpower">
-          <img src="./img/manpower-small.png" class="projects__img" alt="">
+          <img src="./img/manpower-small.png" class="card__img" alt="">
         </a>
-        <h5 class="projects__text u-center-text">Manpower</h5>
+        <h5 class="card__text u-center-text">Manpower</h5>
       </div>
     </div>
   </section>
 
-  <section class="about u-margin-top-huge" id="residental">
-    <div class="about__img">
-      <img src="./img/section.png" class="about__img-img" alt="">
+  <section class="services u-margin-top-big" id="residental">
+    <div class="services__img">
+      <img src="./img/section.png" class="services__img-img" alt="">
     </div>
-    <div class="about__content">
-      <h4 class="heading-primary about__heading u-margin-bottom-medium">Residental Construction</h4>
-      <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero dolor rerum optio
+    <div class="services__content">
+      <h4 class="heading-primary services__heading u-margin-bottom-medium">Residental Construction</h4>
+      <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero dolor rerum optio
         laboriosam, deleniti
         minima? Libero vitae, amet natus omnis illum illo molestias qui ab ea quaerat, debitis saepe?</p>
 
-      <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero dolor rerum optio
+      <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero dolor rerum optio
         laboriosam, deleniti minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo officiis provident
         ducimus quod veritatis amet corporis! Officia at officiis dolorum, id aperiam atque.</p>
     </div>
   </section>
 
-  <section class="about u-margin-top-huge" id="commercial">
-    <div class="about__content about__content-reverse">
-      <h4 class="heading-primary about__heading about__heading-reverse u-margin-bottom-medium">Commercial Construction
+  <section class="services u-margin-top-huge" id="commercial">
+    <div class="services__content services__content-reverse">
+      <h4 class="heading-primary services__heading services__heading-reverse u-margin-bottom-medium">Commercial Construction
       </h4>
-      <p class="about__text about__text-reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero
+      <p class="services__text services__text-reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero
         dolor rerum
         optio
         laboriosam, deleniti
         minima? Libero vitae, amet natus omnis illum illo molestias qui ab ea quaerat, debitis saepe?</p>
 
-      <p class="about__text about__text-reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero
+      <p class="services__text services__text-reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero
         dolor rerum
         optio
         laboriosam, deleniti minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo officiis provident
         ducimus quod veritatis amet corporis! Officia at officiis dolorum, id aperiam atque.</p>
     </div>
-    <div class="about__img about__img-reverse">
-      <img src="./img/section-commercial.png" class="about__img-img" alt="">
+    <div class="services__img services__img-reverse">
+      <img src="./img/section-commercial.png" class="services__img-img" alt="">
     </div>
   </section>
 
-  <section class="about u-margin-top-huge" id="manpower">
-    <div class="about__img">
-      <img src="./img/section-manpower.png" class="about__img-img" alt="">
+  <section class="services u-margin-top-huge" id="manpower">
+    <div class="services__img">
+      <img src="./img/section-manpower.png" class="services__img-img" alt="">
     </div>
-    <div class="about__content">
-      <h4 class="heading-primary about__heading u-margin-bottom-medium">Manpower</h4>
-      <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero dolor rerum optio
+    <div class="services__content">
+      <h4 class="heading-primary services__heading u-margin-bottom-medium">Manpower</h4>
+      <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero dolor rerum optio
         laboriosam, deleniti
         minima? Libero vitae, amet natus omnis illum illo molestias qui ab ea quaerat, debitis saepe?</p>
 
-      <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero dolor rerum optio
+      <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero dolor rerum optio
         laboriosam, deleniti minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo officiis provident
         ducimus quod veritatis amet corporis! Officia at officiis dolorum, id aperiam atque.</p>
     </div>
@@ -157,23 +157,47 @@
 
   <section class="section-form u-center-text">
     <!-- <form class="form u-center-text" action="#" method="get">
-      <input class="form__input" type="text" placeholder="Your Name">
-      <input class="form__input" type="email" placeholder="Your Email">
+          <input class="form__input" type="text" placeholder="Your Name">
+          <input class="form__input" type="email" placeholder="Your Email">
       <textarea class="form__input" name="text" id="text" cols="30" rows="5" placeholder="Your Text"></textarea>
     </form> -->
   </section>
 
-  <section class="section-contact u-margin-top-huge">
+  <section class="services u-margin-top-big u-padding-top-medium u-padding-bottom-medium" id="about">
+    <div class="services__content services__content-reverse">
+      <h4 class="heading-primary services__heading services__heading-reverse services__heading-reverse-about u-margin-bottom-medium">A Little Stor<span>y About Us</span>
+      </h4>
+      <p class="services__text services__text-reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero
+        dolor rerum
+        optio
+        laboriosam, deleniti
+        minima? Libero vitae, amet natus omnis illum illo molestias qui ab ea quaerat, debitis saepe?</p>
+
+      <p class="services__text services__text-reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero
+        dolor rerum
+        optio
+        laboriosam, deleniti minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo officiis provident
+        ducimus quod veritatis amet corporis! Officia at officiis dolorum, id aperiam atque.</p>
+
+        <a href="#contact" class="btn btn__small">Hire us <i
+          class="fas fa-long-arrow-alt-right btn__arrow btn__arrow-small"></i></a>
+    </div>
+    <div class="services__img services__img-reverse services__img-reverse-about">
+      <img src="./img/section-commercial.png" class="services__img-img" alt="">
+    </div>
+  </section>
+
+  <section class="section-contact" id="contact">
     <h4 class="heading-primary">Contact Us</h4>
     <form class="form u-center-text" action="#" method="get">
       <input class="form__input" type="text" placeholder="Your Name">
       <input class="form__input" type="email" placeholder="Your Email">
       <textarea class="form__input" name="text" id="text" cols="30" rows="5" placeholder="Your Text"></textarea>
       <!-- <button type="submit" class="button">Send
-            <span class="button__span"></span>
-            <span class="button__span"></span>
-            <span class="button__span"></span>
-            <span class="button__span"></span>
+        <span class="button__span"></span>
+        <span class="button__span"></span>
+        <span class="button__span"></span>
+        <span class="button__span"></span>
       </button> -->
       <button class="btn u-margin-top-small">Send message <i
           class="fas fa-long-arrow-alt-right btn__arrow"></i></button>
@@ -196,8 +220,9 @@
   </footer>
 
   <!-- <script src="./js/javascript.js"></script> -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     $(document).ready(function () {
       $("#lightSlider").lightSlider({
         item: 1,
@@ -211,14 +236,14 @@
         cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
         easing: "linear", //'for jquery animation',////
 
-        speed: 400, //ms'
-        auto: false,
-        loop: false,
+        speed: 600, //ms'
+        auto: true,
+        loop: true,
         slideEndAnimation: true,
         pause: 2000,
 
         keyPress: false,
-        controls: true,
+        controls: false,
         prevHtml: "",
         nextHtml: "",
 
@@ -251,9 +276,9 @@
         onBeforePrevSlide: function (el) {}
       });
     });
-  </script> -->
+  </script>
 
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzd5bEX2qFfPphpBbV3haPx1Vg5SWpkls&callback=initMap"></script> -->
+  <script src="./js/lightslider.js"></script>
 </body>
 
 </html>

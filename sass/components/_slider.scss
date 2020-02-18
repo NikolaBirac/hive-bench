@@ -1,9 +1,9 @@
 .lightSlider {
-    // width: 100%;
+    width: 100%;
 
     &__item {
         position: relative;
-        // width: 100vw;
+        width: 100vw;
     }
 
     &__img {
@@ -53,7 +53,7 @@
 }
 .lSPager {
     position: absolute;
-    bottom: 13rem;
+    bottom: 6rem;
     left: 50%;
     transform: translateX(-50%) !important;
 }

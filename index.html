@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/6a296e5dd3.js" crossorigin="anonymous"></script>
+  
 
 </head>
 
@@ -81,19 +82,19 @@
   <section class="container section-cards" id="services">
     <h4 class="heading-primary u-center-text u-margin-top-big u-margin-bottom-medium">What We Do</h4>
     <div class="section-cards__cards u-center-text">
-      <div class="card">
+      <div class="card js--wp-1">
         <a href="#residental">
           <img src="./img/residental-small.png" class="card__img" alt="">
         </a>
         <h5 class="card__text u-center-text">Residental Construction</h5>
       </div>
-      <div class="card u-margin-top-big">
+      <div class="card u-margin-top-big js--wp-2">
         <a href="#commercial">
           <img src="./img/commercial-small.png" class="card__img" alt="">
         </a>
         <h5 class="card__text u-center-text">Commercial Construction</h5>
       </div>
-      <div class="card">
+      <div class="card js--wp-3">
         <a href="#manpower">
           <img src="./img/manpower-small.png" class="card__img" alt="">
         </a>
@@ -228,6 +229,7 @@
 
   <!-- <script src="./js/javascript.js"></script> -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="./js/jquery.waypoints.min.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function () {
@@ -243,11 +245,11 @@
         cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
         easing: "linear", //'for jquery animation',////
 
-        speed: 600, //ms'
+        speed: 900, //ms'
         auto: true,
         loop: true,
         slideEndAnimation: true,
-        pause: 2000,
+        pause: 5000,
 
         keyPress: false,
         controls: false,
@@ -286,6 +288,7 @@
   </script>
 
   <script src="./js/lightslider.js"></script>
+  <script src="./js/javascript.js"></script>
 </body>
 
 </html>

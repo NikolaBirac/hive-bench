@@ -10,7 +10,6 @@
     }
 }
 
-
 @keyframes moveInLeft {
     0% {
         opacity: 0;
@@ -27,9 +26,6 @@
     }
 }
 
-.moveInLeft {
-    animation: moveInLeft;
-}
 
 @keyframes moveInRight {
     0% {
@@ -47,9 +43,6 @@
     }
 }
 
-.moveInRight {
-    animation: moveInRight;
-}
 
 @keyframes fadeInUp {
     from {
@@ -61,6 +54,14 @@
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+.moveInLeft {
+    animation: moveInLeft;
+}
+
+.moveInRight {
+    animation: moveInRight;
 }
 
 .fadeInUp {

@@ -33,9 +33,6 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.moveInLeft {
-  animation: moveInLeft; }
-
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -46,9 +43,6 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.moveInRight {
-  animation: moveInRight; }
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -56,6 +50,12 @@ body {
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0); } }
+
+.moveInLeft {
+  animation: moveInLeft; }
+
+.moveInRight {
+  animation: moveInRight; }
 
 .fadeInUp {
   animation: fadeInUp; }
@@ -322,6 +322,7 @@ nav {
       margin-left: -3px; }
 
 .form {
+  opacity: 0;
   background-color: rgba(255, 255, 255, 0.9);
   width: 40rem;
   padding: 3rem;
@@ -335,6 +336,8 @@ nav {
     font-size: 1.6rem;
     font-family: inherit;
     width: 30rem; }
+  .form.animated {
+    opacity: 1; }
 
 .btn {
   cursor: pointer;
@@ -457,12 +460,18 @@ nav {
   justify-content: space-between;
   padding: 0 20rem; }
 
-.js--wp-1,
-.js--wp-2,
-.js--wp-3 {
+.js--card-right,
+.js--card-up,
+.js--card-left,
+.js--service-left,
+.js--service-right,
+.js--service-left2 {
   opacity: 0; }
 
-.js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated {
+.js--card-right.animated,
+.js--card-up.animated,
+.js--card-left.animated,
+.js--service-left.animated,
+.js--service-right.animated,
+.js--service-left2.animated {
   opacity: 1; }

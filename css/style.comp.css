@@ -437,6 +437,11 @@ nav {
       height: 50%;
       width: 1px; }
 
+.about {
+  padding-top: 11rem; }
+  .about__heading {
+    top: 5%; }
+
 .section-cards__cards::after {
   content: '';
   display: table;
@@ -452,7 +457,7 @@ nav {
   background-position-x: 50%; }
 
 .section-contact {
-  margin-top: 22rem;
+  margin-top: 14rem;
   background-color: #f4f4f4;
   height: 20rem;
   display: flex;

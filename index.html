@@ -21,7 +21,7 @@
   <header>
     <div class="container">
       <div class="logo">
-        <img src="./img/Capture.PNG" class="logo__img" alt="logo">
+        <img src="./img/logo-big.png" class="logo__img" alt="logo">
         <!-- <p class="logo__text">SXM B.V.</p> -->
         <p class="logo__text-small">Construction / Manpower</p>
         <div class="social">
@@ -143,13 +143,96 @@
     </div>
   </section>
 
-  <section class="section-form u-center-text">
+  <section class="section-projects u-margin-top-huge" id="projects">
+    <h4 class="heading-primary u-center-text u-margin-bottom-big">Projects</h4>
+    <!-- <img src="./img/logo-small.png" alt=""> -->
+    <div class="projects">
+      <div class="projects__item">
+        <img src="./img/Screen3-set.png" class="projects__img" alt="">
+        <div class="projects__info">
+          <div class="projects__date">
+            <i class="far fa-calendar-alt"></i>
+            <span>24 September , 2020</span>
+          </div>
+          <h2 class="heading-secondary u-margin-bottom-small">Royal Palm Hotel</h2>
+          <p class="projects__text u-margin-bottom-small">Awarded contracts at the Royal Palm and Flamingo Resort – Hives has been actively involved restoring both Hotels after Hurricane Irma in 2017.</p>
+          <div class="btn btn__small" onclick="openModal();currentSlide(1)">
+            <span>Gallery</span>
+            <i class="fas fa-long-arrow-alt-right btn__arrow btn__arrow-small"></i>
+          </div>
+        </div>
+      </div>
+      <div class="projects__item">
+        <img src="./img/Screen3-set.png" class="projects__img" alt="">
+        <div class="projects__info">
+          <div class="projects__date">
+            <i class="far fa-calendar-alt"></i>
+            <span>24 September , 2020</span>
+          </div>
+          <h2 class="heading-secondary u-margin-bottom-small">Flamingo Resort</h2>
+          <p class="projects__text u-margin-bottom-small">Awarded contracts at the Royal Palm and Flamingo Resort – Hives has been actively involved restoring both Hotels after Hurricane Irma in 2017.</p>
+          <div class="btn btn__small" onclick="openModal();currentSlide(1)">
+            <span>Gallery</span>
+            <i class="fas fa-long-arrow-alt-right btn__arrow btn__arrow-small"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="./img/Screen2.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="./img/Screen2.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="./img/Screen2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="./img/Screen2.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        <div class="column">
+          <img class="demo cursor" src="./img/Screen2.png" style="width:100%" onclick="currentSlide(1)" alt="Hives Construction / Manpower">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/Screen2.png" style="width:100%" onclick="currentSlide(2)" alt="Hives Construction / Manpower">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/Screen2.png" style="width:100%" onclick="currentSlide(3)" alt="Hives Construction / Manpower">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/Screen2.png" style="width:100%" onclick="currentSlide(4)" alt="Hives Construction / Manpower">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="section-form u-center-text"> -->
     <!-- <form class="form u-center-text" action="#" method="get">
           <input class="form__input" type="text" placeholder="Your Name">
           <input class="form__input" type="email" placeholder="Your Email">
       <textarea class="form__input" name="text" id="text" cols="30" rows="5" placeholder="Your Text"></textarea>
     </form> -->
-  </section>
+  <!-- </section> -->
 
   <section class="services u-margin-top-big u-padding-top-medium u-padding-bottom-medium" id="about">
     <div class="services__content services__content-reverse about">
@@ -192,7 +275,7 @@
 
   <footer class="footer u-margin-top-big">
     <div class="footer__contact">
-      <img src="./img/logo-small.jpg" class="footer__logo" alt="">
+      <img src="./img/logo-small.png" class="footer__logo" alt="">
       <div>
         <p>s.mitchell@hiveandbenchsxm.com</p>
         <p>1-887-318-0028 International cell</p>

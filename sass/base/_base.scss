@@ -23,6 +23,11 @@ body {
     box-sizing: border-box !important;
     // height: 100vh;
     font-family: $font-primary;
+    background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.96)), url(../img/honey2.png);
+    background-attachment: fixed;
+    background-position-x: center;
+    // background-size: 150px;
+    // background-size: cover;
     // overflow-x: hidden;
 }
 

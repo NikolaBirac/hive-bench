@@ -7,7 +7,9 @@
     color: $color-primary;
 
     &__img {
-        width: 43rem;
+        // width: 43rem;
+        height: 90px;
+        margin-bottom: 10px;
     }
 
     &__text {

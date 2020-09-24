@@ -129,14 +129,20 @@ nav {
     color: inherit; }
 
 .footer {
-  padding: 0 16rem 0;
+  padding: 2rem 16rem 0;
   font-size: 1.7rem; }
   .footer__contact {
     display: flex;
     align-items: center; }
   .footer__logo {
-    height: 17rem;
+    height: 22rem;
     margin-right: 2rem; }
+    @media only screen and (min-width: 112.5em) {
+      .footer__logo {
+        height: 25rem; } }
+    @media only screen and (max-width: 75em) {
+      .footer__logo {
+        height: 18rem; } }
 
 .logo {
   display: flex;
@@ -450,9 +456,12 @@ img.hover-shadow {
 .form {
   opacity: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  width: 40rem;
+  width: 65rem;
   padding: 3rem;
   border: 1px solid #a8a8a8; }
+  @media only screen and (max-width: 106.25em) {
+    .form {
+      width: 45rem; } }
   .form__input {
     background-color: transparent;
     border: none;
@@ -461,7 +470,10 @@ img.hover-shadow {
     margin: 1rem 0;
     font-size: 1.6rem;
     font-family: inherit;
-    width: 30rem; }
+    width: 55rem; }
+    @media only screen and (max-width: 106.25em) {
+      .form__input {
+        width: 35rem; } }
   .form.animated {
     opacity: 1; }
 
@@ -604,15 +616,19 @@ img.hover-shadow {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20rem; }
+  padding: 0 40rem; }
+  @media only screen and (max-width: 106.25em) {
+    .section-contact {
+      padding: 0 23rem; } }
+  @media only screen and (max-width: 88125em) {
+    .section-contact {
+      padding: 0 25rem; } }
+  @media only screen and (max-width: 75em) {
+    .section-contact {
+      padding: 0 10rem; } }
 
 .section-projects {
   padding: 8em 4rem; }
-
-.honey-background {
-  background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.96)), url(../img/honey2.png);
-  background-attachment: fixed;
-  background-position-x: center; }
 
 .js--card-right,
 .js--card-up,

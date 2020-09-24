@@ -1,6 +1,6 @@
 .footer {
     // height: 200px;
-    padding: 0 16rem 0;
+    padding: 2rem 16rem 0;
     font-size: 1.7rem;
 
     &__contact {
@@ -9,7 +9,14 @@
     }
 
     &__logo {
-        height: 17rem;
+        height: 22rem;
         margin-right: 2rem;
+
+        @include respond(big-desktop) {
+            height: 25rem;
+        }
+        @include respond(tab-land) {
+            height: 18rem;
+        }
     }
 }

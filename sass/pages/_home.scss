@@ -21,7 +21,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20rem;
+    padding: 0 40rem;
+
+    @media only screen and (max-width: 106.25em) { //1700px
+        padding: 0 23rem; 
+    }
+    @media only screen and (max-width: 88125em) { //1300px
+        padding: 0 25rem;
+    }
+    @include respond(tab-land) {
+        padding: 0 10rem;
+    }
 }
 
 .section-projects {
@@ -30,12 +40,6 @@
     // background-attachment: fixed;
     // // background-size: 150px;
     // background-size: cover;
-}
-
-.honey-background {
-    background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.96)), url(../img/honey2.png);
-    background-attachment: fixed;
-    background-position-x: center;
 }
 
 .js--card-right,

@@ -9,10 +9,7 @@ html {
 
 body {
   box-sizing: border-box !important;
-  font-family: "Playfair Display", serif;
-  background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.96)), url(../img/honey2.png);
-  background-attachment: fixed;
-  background-position-x: center; }
+  font-family: "Playfair Display", serif; }
 
 ::selection {
   background-color: #31445c;
@@ -600,15 +597,6 @@ img.hover-shadow {
   display: table;
   clear: both; }
 
-.section-form {
-  margin-top: 17rem;
-  width: 100%;
-  height: 450px;
-  background: linear-gradient(rgba(189, 189, 189, 0.35), rgba(228, 228, 228, 0.35)), url(../img/fixed.png);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position-x: 50%; }
-
 .section-contact {
   margin-top: 14rem;
   background-color: #f4f4f4;
@@ -620,6 +608,11 @@ img.hover-shadow {
 
 .section-projects {
   padding: 8em 4rem; }
+
+.honey-background {
+  background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.96)), url(../img/honey2.png);
+  background-attachment: fixed;
+  background-position-x: center; }
 
 .js--card-right,
 .js--card-up,

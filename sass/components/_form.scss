@@ -1,12 +1,15 @@
 .form {
     opacity: 0;
     background-color: rgba(255, 255, 255, 0.9);
-    width: 65rem;
+    width: 60rem;
     padding: 3rem;
     border: 1px solid rgb(168, 168, 168);
 
     @media only screen and (max-width: 106.25em) { //1700px
         width: 45rem;
+    }
+    @media only screen and (max-width: 59.357em) { //950px
+        width: 40rem;
     }
 
     &__input {
@@ -17,10 +20,13 @@
         margin: 1rem 0;
         font-size: 1.6rem;
         font-family: inherit;
-        width: 55rem;
+        width: 50rem;
 
         @media only screen and (max-width: 106.25em) { //1700px
             width: 35rem;
+        }
+        @media only screen and (max-width: 59.357em) { //950px
+            width: 34rem;
         }
     }
 

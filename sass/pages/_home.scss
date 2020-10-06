@@ -1,9 +1,3 @@
-.section-cards {
-    &__cards {
-        @include clearfix;
-    }
-}
-
 // .section-form {
 //     margin-top: 17rem;
 //     width: 100%;
@@ -14,6 +8,13 @@
 //     background-position-x: 50%;
 // }
 
+.section-video {
+    width: 100%;
+    height: 70rem;
+    overflow: hidden;
+    position: relative;
+}
+
 .section-contact {
     margin-top: 14rem;
     background-color: $color-grey;
@@ -21,16 +22,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40rem;
+    padding: 0 35rem;
 
     @media only screen and (max-width: 106.25em) { //1700px
-        padding: 0 23rem; 
+        padding: 0 30rem; 
     }
-    @media only screen and (max-width: 88125em) { //1300px
-        padding: 0 25rem;
+    @media only screen and (max-width: 88.125em) { //1300px
+        padding: 0 20rem;
     }
     @include respond(tab-land) {
-        padding: 0 10rem;
+        padding: 0 7.5rem;
+    }
+    @media only screen and (max-width: 59.357em) { //950px
+        padding: 0 2rem;
     }
 }
 

@@ -8,15 +8,15 @@ html {
     scroll-behavior: smooth;
     font-size: 62.5%; //1rem = 10px
 
-    // @include respond(phone-small) {
-    //     font-size: 43.75% !important;       // 1rem = 7px;     
-    // }
-    // @include respond(tab-port) {
-    //     font-size: 56% !important;         //1rem = 9px
-    // }
-    // @include respond(big-desktop) {
-    //     font-size: 75%;         //1rem = 12px
-    // }
+    @include respond(phone-small) {
+        font-size: 43.75% !important;       // 1rem = 7px;     
+    }
+    @include respond(tab-port) {
+        font-size: 56% !important;         //1rem = 9px
+    }
+    @include respond(big-desktop) {
+        font-size: 75%;         //1rem = 12px
+    }
 }
 
 body {

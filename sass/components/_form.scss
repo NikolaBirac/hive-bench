@@ -11,6 +11,10 @@
     @media only screen and (max-width: 59.357em) { //950px
         width: 40rem;
     }
+    @include respond(phone-small) {
+        width: 100%;
+        padding: 2rem;
+    }
 
     &__input {
         background-color: transparent;
@@ -27,6 +31,9 @@
         }
         @media only screen and (max-width: 59.357em) { //950px
             width: 34rem;
+        }
+        @include respond(phone) {
+            width: 100%;
         }
     }
 

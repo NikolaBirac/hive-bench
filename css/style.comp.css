@@ -93,7 +93,7 @@ body {
       padding: 0 1rem; } }
   @media only screen and (max-width: 25em) {
     .heading-primary {
-      font-size: 3rem; } }
+      font-size: 3.2rem; } }
 
 .heading-secondary {
   font-size: 2.7rem;
@@ -181,9 +181,36 @@ nav {
 .footer {
   padding: 2rem 16rem 0;
   font-size: 1.7rem; }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      padding: 4rem 12rem 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 2rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 14rem 4rem 0; } }
   .footer__contact {
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contact {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer__text {
+      margin-top: 3rem; } }
+  .footer__flag {
+    width: 12rem;
+    margin-left: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__flag {
+        margin-left: 0;
+        margin-top: 3rem; } }
+    .footer__flag img {
+      width: 100%; }
   .footer__logo {
     height: 22rem;
     margin-right: 2rem; }
@@ -415,7 +442,6 @@ img.hover-shadow {
   font-size: 1.7rem; }
 
 .building__nav {
-  text-decoration: none;
   color: inherit; }
   .building__nav h3 {
     display: inline; }
@@ -477,6 +503,9 @@ img.hover-shadow {
         .services__img-regular::before {
           width: 57%;
           left: 12rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .services__img-regular::before {
+          display: none; } }
     .services__img-regular::after {
       background: #c6a15b none repeat scroll 0 0;
       bottom: -8.5rem;
@@ -559,7 +588,7 @@ img.hover-shadow {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 5rem 10% 0;
+        padding: 3rem 3rem 0;
         text-align: center; } }
   .services__heading {
     position: absolute;
@@ -642,6 +671,10 @@ img.hover-shadow {
   @media only screen and (max-width: 59.357em) {
     .form {
       width: 40rem; } }
+  @media only screen and (max-width: 22.5em) {
+    .form {
+      width: 100%;
+      padding: 2rem; } }
   .form__input {
     background-color: transparent;
     border: none;
@@ -657,6 +690,9 @@ img.hover-shadow {
     @media only screen and (max-width: 59.357em) {
       .form__input {
         width: 34rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .form__input {
+        width: 100%; } }
   .form.animated {
     opacity: 1; }
 
@@ -759,9 +795,47 @@ img.hover-shadow {
       width: 1px; }
 
 .about {
-  padding-top: 3rem; }
-  .about__heading {
-    top: 5%; }
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      text-align: center; } }
+  .about__content {
+    width: 45%; }
+    @media only screen and (max-width: 37.5em) {
+      .about__content {
+        width: 100%; } }
+  .about__img {
+    width: 45%; }
+    @media only screen and (max-width: 75em) {
+      .about__img {
+        width: 50%; } }
+    .about__img-img {
+      width: 100%;
+      padding: 0 3rem; }
+      @media only screen and (max-width: 75em) {
+        .about__img-img {
+          padding: 0; } }
+      @media only screen and (max-width: 37.5em) {
+        .about__img-img {
+          width: 50%; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__img-desktop {
+        display: none; } }
+    .about__img-mobile {
+      display: none; }
+      @media only screen and (max-width: 37.5em) {
+        .about__img-mobile {
+          width: 100%;
+          display: flex;
+          justify-content: center; } }
+  .about__text {
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+    line-height: 1.6;
+    font-family: "Playfair Display", serif; }
 
 .projects {
   display: flex;
@@ -778,16 +852,15 @@ img.hover-shadow {
         flex-direction: column;
         padding-bottom: 3rem; } }
   .projects__info {
-    padding-left: 3rem;
-    max-width: 45rem; }
+    padding-left: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .projects__info {
         padding-left: 0; } }
   .projects__img {
-    width: 35rem; }
-    @media only screen and (min-width: 112.5em) {
+    width: 45rem; }
+    @media only screen and (max-width: 56.25em) {
       .projects__img {
-        width: 45rem; } }
+        width: 35rem; } }
     @media only screen and (max-width: 37.5em) {
       .projects__img {
         width: 100%;
@@ -800,25 +873,48 @@ img.hover-shadow {
   overflow: hidden; }
 
 .section-contact {
-  margin-top: 14rem;
+  margin-top: 24rem;
   background-color: #f4f4f4;
   height: 20rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 35rem; }
-  @media only screen and (max-width: 106.25em) {
-    .section-contact {
-      padding: 0 30rem; } }
+  padding: 0 25rem; }
   @media only screen and (max-width: 88.125em) {
     .section-contact {
       padding: 0 20rem; } }
   @media only screen and (max-width: 75em) {
     .section-contact {
-      padding: 0 7.5rem; } }
+      padding: 0 7.5rem;
+      margin-top: 20rem; } }
   @media only screen and (max-width: 59.357em) {
     .section-contact {
-      padding: 0 2rem; } }
+      padding: 0 2rem;
+      margin-top: 16rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-contact {
+      padding: 0 3rem;
+      justify-content: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-contact > h2 {
+      display: none; } }
+  .section-contact__mobile {
+    display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .section-contact__mobile {
+        display: block; } }
+  @media only screen and (max-width: 22.5em) {
+    .section-contact {
+      padding: 0; } }
+
+.section__about {
+  padding: 0 8rem; }
+  @media only screen and (max-width: 75em) {
+    .section__about {
+      padding: 0 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section__about {
+      padding: 0 3rem; } }
 
 .js--card-right,
 .js--card-up,

@@ -17,34 +17,56 @@
 }
 
 .section-contact {
-    margin-top: 14rem;
+    margin-top: 24rem;
     background-color: $color-grey;
     height: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 35rem;
+    padding: 0 25rem;
 
-    @media only screen and (max-width: 106.25em) { //1700px
-        padding: 0 30rem; 
-    }
     @media only screen and (max-width: 88.125em) { //1300px
         padding: 0 20rem;
     }
     @include respond(tab-land) {
         padding: 0 7.5rem;
+        margin-top: 20rem;
     }
     @media only screen and (max-width: 59.357em) { //950px
         padding: 0 2rem;
+        margin-top: 16rem;
+    }
+    @include respond(phone) {
+        padding: 0 3rem;
+        justify-content: center;
+    }
+
+    & > h2 {
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &__mobile {
+        display: none;
+        @include respond(phone) {
+            display: block;
+        }
+    }
+    @include respond(phone-small) {
+        padding: 0;
     }
 }
 
-.section-projects {
-    // padding: 8em 4rem;
-    // background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.78)), url(../img/honey2.png);
-    // background-attachment: fixed;
-    // // background-size: 150px;
-    // background-size: cover;
+.section__about {
+    padding: 0 8rem;
+
+    @include respond(tab-land) {
+        padding: 0 4rem;
+    }
+    @include respond(phone) {
+        padding: 0 3rem;
+    }
 }
 
 .js--card-right,

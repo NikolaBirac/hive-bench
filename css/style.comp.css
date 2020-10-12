@@ -481,12 +481,10 @@ img.hover-shadow {
       .services__img {
         width: 100%;
         display: flex;
-        justify-content: center; } }
+        justify-content: center;
+        padding-left: 0; } }
     .services__img-img {
       width: 100%; }
-      @media only screen and (max-width: 37.5em) {
-        .services__img-img {
-          width: 60%; } }
     .services__img-regular::before {
       background: #f4f4f4 none repeat scroll 0 0;
       content: "";
@@ -851,7 +849,8 @@ img.hover-shadow {
     @media only screen and (max-width: 37.5em) {
       .projects__item {
         flex-direction: column;
-        padding-bottom: 3rem; } }
+        padding-bottom: 3rem;
+        width: 100%; } }
   .projects__info {
     padding-left: 3rem; }
     @media only screen and (max-width: 37.5em) {

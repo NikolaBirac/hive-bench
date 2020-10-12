@@ -1,5 +1,4 @@
 .services {
-    // padding: 0 4rem;
     max-width: 1600px;
     margin: 0 auto;
     position: relative;
@@ -23,7 +22,6 @@
         width: 50%;
         position: relative;
         padding-left: 4rem;
-        // display: inline-block;
         float: left;
 
         @include respond(tab-port) {
@@ -33,13 +31,11 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            padding-left: 0;
         }
 
         &-img {
             width: 100%;
-            @include respond(phone) {
-                width: 60%;
-            }
         }
 
         &-regular {

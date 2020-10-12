@@ -3,9 +3,23 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <meta name="copyright" content="© 2020 Studio 77, Beograd">
+  <meta name="robots" content="index, follow">
   <title>Hives</title>
+  <meta name="description" content="Web dizajn Beograd Srbija, agencija Studio 77. Odlične cene. Izrada sajtova, digitalni marketing, SEO, optimizacija sajta, garantovano pozicioniranje na Google-u.">
+  <meta name="keywords" content="web, dizajn, beograd, izrada, sajta, sajtova, seo, studio77+, pozicioniranje, optimizacija">
+  <meta name="author" content="Studio 77, Beograd">
+  <meta name="reply-to" content="mailto:office@webdizajn-beograd.com">
+  <meta name="googlebot" content="noodp">
+  <meta property="og:title" content="Web dizajn Beograd, Studio 77">
+  <meta property="og:site_name" content="Web dizajn Beograd, Studio 77">
+  <meta property="og:url" content="https://www.webdizajn-beograd.com/">
+  <meta property="og:description" content="Web dizajn Beograd Srbija, agencija Studio 77. Odlične cene. Izrada sajtova, digitalni marketing, SEO, optimizacija sajta, garantovano pozicioniranje na Google-u.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://webdizajn-beograd.com/images/web-dizajn-open-graph-schema-logotip.jpg">
 
   <link rel="shortcut icon" href="./img/hives-favicon.png" type="image/x-icon">
   <link rel="icon" href="./img/hives-favicon.png" type="image/x-icon">
@@ -154,7 +168,7 @@
           <h3 class="heading-secondary u-margin-bottom-small">Royal Palm Hotel</h3>
           <p class="projects__text u-margin-bottom-small">Awarded contracts at the Royal Palm and Flamingo Resort –
             Hives has been actively involved restoring both hotels after Hurricane Irma in 2017.</p>
-          <div class="btn btn__small" onclick="openModal();currentSlide(1)">
+          <div class="btn btn__small" onclick="openModal('royalPalmGallery');currentSlide(1)">
             <span>Gallery</span>
             <i class="fas fa-long-arrow-alt-right btn__arrow btn__arrow-small"></i>
           </div>
@@ -168,7 +182,7 @@
           <p class="projects__text u-margin-bottom-small">Hives has successfully supplied prime contractor Bouygues
             International (BBI), with over 50
             skilled workers including demolition teams, carpenters, masons and installers.</p>
-          <div class="btn btn__small" onclick="openModal();currentSlide(1)">
+          <div class="btn btn__small" onclick="openModal('flamingoGallery');currentSlide(1)">
             <span>Gallery</span>
             <i class="fas fa-long-arrow-alt-right btn__arrow btn__arrow-small"></i>
           </div>
@@ -176,8 +190,8 @@
       </div>
     </div>
 
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div id="royalPalmGallery" class="modal">
+      <span class="close cursor" onclick="closeModal('royalPalmGallery')">&times;</span>
       <div class="modal-content">
 
         <div class="mySlides">
@@ -189,16 +203,6 @@
           <div class="numbertext">2 / 4</div>
           <img src="./img/hives-commercial-residential-manpower-royal-palm-2.jpg" style="width:100%">
         </div>
-
-        <!-- <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-          <img src="./img/Screen2.png" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-          <img src="./img/Screen2.png" style="width:100%">
-        </div> -->
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -215,14 +219,28 @@
           <img class="demo cursor" src="./img/hives-commercial-residential-manpower-royal-palm-2.jpg" style="width:100%"
             onclick="currentSlide(2)" alt="Hives Construction / Manpower">
         </div>
-        <!-- <div class="column">
-          <img class="demo cursor" src="./img/Screen2.png" style="width:100%" onclick="currentSlide(3)"
-            alt="Hives Construction / Manpower">
+      </div>
+    </div>
+    <div id="flamingoGallery" class="modal">
+      <span class="close cursor" onclick="closeModal('flamingoGallery')">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides2">
+          <div class="numbertext">1 / 4</div>
+          <img src="./img/hives-commercial-residential-manpower-flamingo.PNG" style="width:100%">
         </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
         <div class="column">
-          <img class="demo cursor" src="./img/Screen2.png" style="width:100%" onclick="currentSlide(4)"
-            alt="Hives Construction / Manpower">
-        </div> -->
+          <img class="demo2 cursor" src="./img/hives-commercial-residential-manpower-flamingo.PNG" style="width:100%"
+            onclick="currentSlide(1)" alt="Hives Construction / Manpower">
+        </div>
       </div>
     </div>
   </section>

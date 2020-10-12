@@ -58,8 +58,15 @@
     }
 }
 
-.section__about {
+.section-projects {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.section-about {
+    max-width: 1680px;
     padding: 0 8rem;
+    margin: 0 auto;
 
     @include respond(tab-land) {
         padding: 0 4rem;

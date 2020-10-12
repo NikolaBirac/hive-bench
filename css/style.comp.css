@@ -845,6 +845,7 @@ img.hover-shadow {
     .projects {
       padding: 0 3rem; } }
   .projects__item {
+    width: 80%;
     display: flex;
     align-items: center; }
     @media only screen and (max-width: 37.5em) {
@@ -907,13 +908,19 @@ img.hover-shadow {
     .section-contact {
       padding: 0; } }
 
-.section__about {
-  padding: 0 8rem; }
+.section-projects {
+  max-width: 1680px;
+  margin: 0 auto; }
+
+.section-about {
+  max-width: 1680px;
+  padding: 0 8rem;
+  margin: 0 auto; }
   @media only screen and (max-width: 75em) {
-    .section__about {
+    .section-about {
       padding: 0 4rem; } }
   @media only screen and (max-width: 37.5em) {
-    .section__about {
+    .section-about {
       padding: 0 3rem; } }
 
 .js--card-right,

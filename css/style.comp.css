@@ -220,6 +220,10 @@ nav {
     @media only screen and (max-width: 75em) {
       .footer__logo {
         height: 18rem; } }
+  .footer__copyright {
+    display: inline;
+    font-size: inherit;
+    font-weight: 300; }
 
 .logo {
   display: flex;
@@ -315,7 +319,6 @@ nav {
   float: left;
   width: 25%; }
 
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -328,7 +331,6 @@ nav {
   overflow: auto;
   background-color: black; }
 
-/* Modal Content */
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -337,7 +339,6 @@ nav {
   width: 90%;
   max-width: 1200px; }
 
-/* The Close Button */
 .close {
   color: white;
   position: absolute;
@@ -358,7 +359,6 @@ nav {
 .cursor {
   cursor: pointer; }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -375,17 +375,14 @@ nav {
   user-select: none;
   -webkit-user-select: none; }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px; }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -452,6 +449,11 @@ img.hover-shadow {
   @media only screen and (max-width: 37.5em) {
     .building__logo {
       width: 8rem; } }
+
+.building__keyword {
+  display: inline;
+  font-weight: 300;
+  color: inherit; }
 
 .services {
   max-width: 1600px;
@@ -566,12 +568,9 @@ img.hover-shadow {
     width: 50%;
     padding-left: 6rem;
     padding-right: 6rem;
-    padding-top: 22rem;
+    padding-top: 21rem;
     display: inline-block;
     vertical-align: top; }
-    @media only screen and (min-width: 112.5em) {
-      .services__content {
-        padding-top: 25rem; } }
     @media only screen and (max-width: 75em) {
       .services__content {
         padding-top: 13rem; } }
@@ -792,49 +791,6 @@ img.hover-shadow {
       height: 50%;
       width: 1px; }
 
-.about {
-  max-width: 1600px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  @media only screen and (max-width: 37.5em) {
-    .about {
-      text-align: center; } }
-  .about__content {
-    width: 45%; }
-    @media only screen and (max-width: 37.5em) {
-      .about__content {
-        width: 100%; } }
-  .about__img {
-    width: 45%; }
-    @media only screen and (max-width: 75em) {
-      .about__img {
-        width: 50%; } }
-    .about__img-img {
-      width: 100%;
-      padding: 0 3rem; }
-      @media only screen and (max-width: 75em) {
-        .about__img-img {
-          padding: 0; } }
-      @media only screen and (max-width: 37.5em) {
-        .about__img-img {
-          width: 50%; } }
-    @media only screen and (max-width: 37.5em) {
-      .about__img-desktop {
-        display: none; } }
-    .about__img-mobile {
-      display: none; }
-      @media only screen and (max-width: 37.5em) {
-        .about__img-mobile {
-          width: 100%;
-          display: flex;
-          justify-content: center; } }
-  .about__text {
-    font-size: 1.7rem;
-    padding-bottom: 2rem;
-    line-height: 1.6;
-    font-family: "Playfair Display", serif; }
-
 .projects {
   display: flex;
   flex-direction: column;
@@ -873,7 +829,7 @@ img.hover-shadow {
   overflow: hidden; }
 
 .section-contact {
-  margin-top: 24rem;
+  margin-top: 20rem;
   background-color: #f4f4f4;
   height: 20rem;
   display: flex;
@@ -882,18 +838,17 @@ img.hover-shadow {
   padding: 0 25rem; }
   @media only screen and (max-width: 88.125em) {
     .section-contact {
-      padding: 0 20rem; } }
+      padding: 0 18rem; } }
   @media only screen and (max-width: 75em) {
     .section-contact {
-      padding: 0 7.5rem;
-      margin-top: 20rem; } }
+      padding: 0 7.5rem; } }
   @media only screen and (max-width: 59.357em) {
     .section-contact {
       padding: 0 2rem;
       margin-top: 16rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-contact {
-      padding: 0 3rem;
+      padding: 14rem 3rem;
       justify-content: center; } }
   @media only screen and (max-width: 37.5em) {
     .section-contact > h2 {
@@ -910,17 +865,6 @@ img.hover-shadow {
 .section-projects {
   max-width: 1680px;
   margin: 0 auto; }
-
-.section-about {
-  max-width: 1680px;
-  padding: 0 8rem;
-  margin: 0 auto; }
-  @media only screen and (max-width: 75em) {
-    .section-about {
-      padding: 0 4rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .section-about {
-      padding: 0 3rem; } }
 
 .js--card-right,
 .js--card-up,

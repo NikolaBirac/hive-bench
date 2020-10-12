@@ -33,4 +33,10 @@
             width: 8rem;
         }
     }
+
+    &__keyword {
+        display: inline;
+        font-weight: 300;
+        color: inherit;
+    }
 }

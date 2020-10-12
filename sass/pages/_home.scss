@@ -4,7 +4,7 @@
 }
 
 .section-contact {
-    margin-top: 24rem;
+    margin-top: 20rem;
     background-color: $color-grey;
     height: 20rem;
     display: flex;
@@ -13,18 +13,17 @@
     padding: 0 25rem;
 
     @media only screen and (max-width: 88.125em) { //1300px
-        padding: 0 20rem;
+        padding: 0 18rem;
     }
     @include respond(tab-land) {
         padding: 0 7.5rem;
-        margin-top: 20rem;
     }
     @media only screen and (max-width: 59.357em) { //950px
         padding: 0 2rem;
         margin-top: 16rem;
     }
     @include respond(phone) {
-        padding: 0 3rem;
+        padding: 14rem 3rem;
         justify-content: center;
     }
 
@@ -48,19 +47,6 @@
 .section-projects {
     max-width: 1680px;
     margin: 0 auto;
-}
-
-.section-about {
-    max-width: 1680px;
-    padding: 0 8rem;
-    margin: 0 auto;
-
-    @include respond(tab-land) {
-        padding: 0 4rem;
-    }
-    @include respond(phone) {
-        padding: 0 3rem;
-    }
 }
 
 .js--card-right,

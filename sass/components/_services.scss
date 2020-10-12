@@ -145,13 +145,10 @@
         width: 50%;
         padding-left: 6rem;
         padding-right: 6rem;
-        padding-top: 22rem;
+        padding-top: 21rem;
         display: inline-block;
         vertical-align: top;
 
-        @include respond(big-desktop) {
-            padding-top: 25rem;
-        }
         @include respond(tab-land) {
             padding-top: 13rem;
         }

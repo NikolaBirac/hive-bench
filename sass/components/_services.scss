@@ -1,39 +1,86 @@
 .services {
-    // padding: 0 4rem;
+    max-width: 1600px;
+    margin: 0 auto;
     position: relative;
     @include clearfix;
 
+    &__manpower {
+        &-desktop {
+            @include respond(phone) {
+                display: none;
+            }
+        }
+        &-mobile {
+            display: none;
+            @include respond(phone) {
+                display: block;
+            }
+        }
+    }
 
     &__img {
         width: 50%;
         position: relative;
         padding-left: 4rem;
-        // display: inline-block;
         float: left;
+
+        @include respond(tab-port) {
+            padding-left: 3rem;
+        }
+        @include respond(phone) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+        }
 
         &-img {
             width: 100%;
         }
 
-        &::before {
-            background: $color-grey none repeat scroll 0 0;
-            content: "";
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 4rem;
-            width: 93%;
-            z-index: -1;
-        }
-
-        &::after {
-            background: $color-gold none repeat scroll 0 0;
-            bottom: -8.5rem;
-            content: "";
-            height: 14rem;
-            right: 13rem;
-            position: absolute;
-            width: 3px;
+        &-regular {
+            &::before {
+                background: $color-grey none repeat scroll 0 0;
+                content: "";
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 4rem;
+                width: 93%;
+                z-index: -1;
+    
+                @include respond(tab-port) {
+                    top: 3rem;
+                }
+                @include respond(phone) {
+                    width: 57%;
+                    left: 12rem;
+                }
+                @include respond(phone) {
+                    display: none;
+                }
+            }
+            
+            &::after {
+                background: $color-gold none repeat scroll 0 0;
+                bottom: -8.5rem;
+                content: "";
+                height: 14rem;
+                right: 13rem;
+                position: absolute;
+                width: 3px;
+    
+                @include respond(tab-land) {
+                    right: 8rem;
+                }
+                @include respond(tab-port) {
+                    height: 12rem;
+                    bottom: -7.5rem;
+                }
+                @include respond(phone) {
+                    display: none;
+                }
+            }
         }
 
         &-reverse {
@@ -41,13 +88,41 @@
             padding-right: 4rem;
             float: right;
 
-            &::before {
-                right: 0 !important;
-                position: absolute;
+            @include respond(tab-port) {
+                padding-right: 3rem;
             }
 
+            &::before {
+                background: $color-grey none repeat scroll 0 0;
+                content: "";
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 4rem;
+                width: 93%;
+                z-index: -1;
+    
+                @include respond(tab-port) {
+                    top: 3rem;
+                }
+            }
+            
             &::after {
+                background: $color-gold none repeat scroll 0 0;
+                bottom: -8.5rem;
+                content: "";
+                height: 14rem;
                 left: 13rem;
+                position: absolute;
+                width: 3px;
+    
+                @include respond(tab-land) {
+                    left: 8rem;
+                }
+                @include respond(tab-port) {
+                    height: 12rem;
+                    bottom: -7.5rem;
+                }
             }
 
             &-about {
@@ -60,21 +135,35 @@
                 }
             }
         }
+
+        &-small {
+            width: 50%;
+        }
     }
 
     &__content {
-        width: 40%;
-        // height: 100%;
+        width: 50%;
         padding-left: 6rem;
-        padding-top: 20rem;
+        padding-right: 6rem;
+        padding-top: 21rem;
         display: inline-block;
         vertical-align: top;
-        // float: left;
 
-        &-reverse {
-            width: 50%;
-            padding-left: 14rem;
-            padding-right: 6rem;
+        @include respond(tab-land) {
+            padding-top: 13rem;
+        }
+        @include respond(tab-port) {
+            padding-top: 0;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        @include respond(phone) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem 3rem 0;
+            text-align: center;
         }
     }
 
@@ -86,26 +175,56 @@
         padding: 2.5rem 4rem;
         z-index: 1;
 
+        @include respond(tab-land) {
+            top: 3%;
+            left: 19%;
+            padding: 1rem 3rem;
+        }
+        @include respond(tab-port) {
+            display: none;
+        }
+
         & span {
             color: #fff;
         }
 
+        &-mobile {
+            display: none;
+            @include respond(tab-port) {
+                display: block;
+            }
+        }
+
         &-reverse {
-            left: 24%;
-            // width: 80%;
+            left: 35%;
             text-align: center;
-            // transform: translateX(-50%);
+            @include respond(tab-land) {
+                left: 30%;
+            }
 
             &-about {
                 background-color: transparent;
+                position: relative;
+                left: 0;
             }
         }
     }
 
     &__text {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         padding-bottom: 2rem;
         line-height: 1.6;
         font-family: $font-primary;
+
+        @include respond(big-desktop) {
+            font-size: 1.9rem;
+        }
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
+        @include respond(phone) {
+            font-size: 1.7rem;
+
+        }
     }
 }

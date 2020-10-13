@@ -1,0 +1,16 @@
+.bg-video {
+    position: relative;
+    top: -11rem;
+
+    @include respond(tab-port) {
+        top: -7rem;
+    }
+    @include respond(phone) {
+        top: 0;
+        margin-bottom: 3rem;
+    }
+    
+    &__content {
+        width: 100%;
+    }
+}

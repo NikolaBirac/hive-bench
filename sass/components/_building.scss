@@ -1,0 +1,42 @@
+.building {
+    &__heading {
+        @include respond(phone) {
+            margin-top: 3rem;
+        }
+    }
+
+    &__content {
+        padding: 0 20%;
+        
+        @include respond(tab-port) {
+            padding: 0 10%;
+        }
+    }
+
+
+    &__text {
+        font-size: 1.7rem;
+    }
+
+    &__nav {
+        color: inherit;
+
+        & h3 {
+            display: inline;
+        }
+    }
+
+    &__logo {
+        width: 11rem;
+        margin-top: 3rem;
+        @include respond(phone) {
+            width: 8rem;
+        }
+    }
+
+    &__keyword {
+        display: inline;
+        font-weight: 300;
+        color: inherit;
+    }
+}

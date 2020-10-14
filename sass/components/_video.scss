@@ -5,12 +5,38 @@
     @include respond(tab-port) {
         top: -7rem;
     }
+
     @include respond(phone) {
         top: 0;
         margin-bottom: 3rem;
     }
-    
+
     &__content {
         width: 100%;
     }
+}
+
+.custom-button {
+    display: none !important;
+}
+
+*::-webkit-media-controls-panel {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-play-button {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-appearance: none;
 }

@@ -265,48 +265,6 @@ nav {
     margin: 0 1rem;
     color: #b9b7b7; }
 
-.lightSlider {
-  width: 100%; }
-  .lightSlider__item {
-    position: relative;
-    width: 100vw; }
-  .lightSlider__img {
-    width: 100%;
-    position: relative; }
-    .lightSlider__img-shadow {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.4); }
-  .lightSlider__heading {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    padding-bottom: 4rem;
-    width: 80%;
-    text-align: center;
-    color: #fff; }
-  .lightSlider__title {
-    font-size: 7rem;
-    text-align: left;
-    line-height: 8rem; }
-  .lightSlider__text {
-    font-weight: 300;
-    font-size: 3rem;
-    margin-top: 1.5rem; }
-
-.lSSlideWrapper {
-  position: relative; }
-
-.lSPager {
-  position: absolute;
-  bottom: 6rem;
-  left: 50%;
-  transform: translateX(-50%) !important; }
-
 .row > .column {
   padding: 0 8px; }
 
